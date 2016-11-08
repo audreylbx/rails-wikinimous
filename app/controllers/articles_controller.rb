@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(params_task)
+    @article = Article.new(params_article)
     @article.save
   end
 
