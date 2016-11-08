@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+html {
+  background-color: #EEF0F2;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #EEF0F2;
+}
+
+.container {
+  background-color: #C2C6C3;
+  margin: 20px auto;
+  width: 500px;
+  border: 2px dotted grey;
+  padding: 20px;
+  position: relative;
+}
+
+.container h1 {
+  color: #35344B;
+  font-weight: bolder;
+  margin-top: 0px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #35344B;
+  font-weight: bolder;
+}
+
+.container a:hover {
+  color: #A2999E;
+}
+
+.container #create {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container #submit {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+
+.form-group p {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}

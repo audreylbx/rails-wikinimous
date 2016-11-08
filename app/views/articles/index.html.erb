@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">Articles</h1>
+  <%= link_to "📝", new_article_path, :id => "create" %>
+  <% @articles.each do |article| %>
+    <h2><%= article.title %></h2>
+    <p><%= article.content %></p>
+    <%= link_to "Show", article_path(article) %>
+    <%= link_to "Edit", edit_article_path(article) %>
+    <%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure?"} %>
+    <p class="text-center">-----</p>
+  <% end %>
+</div>
